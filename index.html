@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinish Kumar V | AI & Data Science Student</title>
+  <link rel="icon" href="profile.jpg" />
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #e6edf3;
+      --muted: #9da5b4;
+      --accent: #58a6ff;
+      --radius: 14px;
+      --transition: 0.4s ease;
+      font-family: "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.5s;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      object-fit: cover;
+      margin-bottom: 15px;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    header img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px var(--accent);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 15px;
+      border-bottom: 2px solid rgba(88,166,255,0.4);
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    ul.skills {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    ul.skills li {
+      background: rgba(255,255,255,0.05);
+      padding: 10px 16px;
+      border-radius: 20px;
+      color: var(--muted);
+      font-weight: 500;
+      transition: all var(--transition);
+      cursor: default;
+    }
+
+    ul.skills li:hover {
+      background: var(--accent);
+      color: var(--bg);
+      transform: scale(1.05);
+    }
+
+    .project {
+      margin-bottom: 20px;
+      transition: all var(--transition);
+    }
+
+    .project h3 {
+      margin: 0 0 5px;
+      color: var(--accent);
+    }
+
+    .project p {
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    .project a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    .project a:hover {
+      color: #79c0ff;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 25px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.95rem;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color var(--transition);
+    }
+
+    .links a:hover {
+      color: #79c0ff;
+    }
+
+    /* Section fade-in animation */
+    section {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+    section:nth-of-type(1) { animation-delay: 0.1s; }
+    section:nth-of-type(2) { animation-delay: 0.3s; }
+    section:nth-of-type(3) { animation-delay: 0.5s; }
+    section:nth-of-type(4) { animation-delay: 0.7s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header img { width: 120px; height: 120px; }
+      h1 { font-size: 1.6rem; }
+      main { padding: 15px; }
+      ul.skills li { padding: 8px 12px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="VINISH KUMAR V Profile Photo" />
+    <h1>VINISH KUMAR V</h1>
+    <p class="tagline">AI & Data Science Student</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m an Artificial Intelligence and Data Science student passionate about solving real-world problems through technology. 
+        I enjoy exploring machine learning, automation, and AI-driven systems. 
+        I’m constantly learning new tools and applying them in projects related to robotics, path planning, and data-driven applications.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Data Structures</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Script2Sound</h3>
+        <p>
+          A text-to-speech system that converts written scripts into natural-sounding audio using speech synthesis models. 
+          It enables users to input any text and generate lifelike speech output, useful for voiceovers, accessibility, and automation tasks.
+        </p>
+        <p><strong>Tech:</strong> Python, gTTS, pyttsx3, Flask</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:vinishkumarv2k6@gmail.com">vinishkumarv2k6@gmail.com</a></p>
+      <p>🌐 <a href="https://github.com/VINISH-KUMAR-V2006" target="_blank">GitHub</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/vinish-kumar-v-138549339" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> VINISH KUMAR V — Crafted with Code & Curiosity</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
